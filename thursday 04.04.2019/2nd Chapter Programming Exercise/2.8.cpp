@@ -5,10 +5,10 @@ using namespace std;
 int main()
 {
 	int timeZoneOffset;
-    cout << "Enter the time zone offset to GMT: ";
-    cin >> timeZoneOffset;
+    	cout << "Enter the time zone offset to GMT: ";
+    	cin >> timeZoneOffset;
 
-    int totalSeconds = time(0);
+    	int totalSeconds = time(0);
 	int currentSecond = totalSeconds % 60;
 	int totalMinutes = totalSeconds / 60;
 	int currentMinute = totalMinutes % 60;
@@ -18,5 +18,5 @@ int main()
 
 	cout << "Current time is " << currentHour << ":" << currentMinute << ":" << currentSecond;
 
-    return 0;
+    	return 0;
 }
